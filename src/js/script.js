@@ -12,13 +12,15 @@ hamburger.addEventListener("click", function () {
 
 // mudar o tema a escolha do user
 
-const themeRadios = document.querySelectorAll('input[name="theme"]');
+const themeOptions = document.querySelectorAll(".theme-option");
 
-themeRadios.forEach(radio => {
-  radio.addEventListener("change", () => {
-    document.documentElement.setAttribute("data-theme", radio.value);
+themeOptions.forEach(option => {
+  option.addEventListener("click", () => {
+    const theme = option.dataset.theme;
+    document.documentElement.setAttribute("data-theme", theme);
   });
 });
+
 
 
 
