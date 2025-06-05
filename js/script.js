@@ -10,5 +10,16 @@ hamburger.addEventListener("click", function () {
 });
 
 
+// mudar o tema a escolha do user
+
+const themeRadios = document.querySelectorAll('input[name="theme"]');
+
+themeRadios.forEach(radio => {
+  radio.addEventListener("change", () => {
+    document.documentElement.setAttribute("data-theme", radio.value);
+  });
+});
+
+
 
 });
