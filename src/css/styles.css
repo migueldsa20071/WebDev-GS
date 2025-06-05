@@ -31,6 +31,7 @@
   font-weight: bold;
 }
 
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -129,11 +130,18 @@ form {
   gap: 0.5rem;
   max-width: 400px;
   margin: 2rem auto;
-  border: solid black 2px;
-  background-color: #f2f2f2;
+  border: solid var(--text) 2px;
+  background-color: var(--bg);
+  color: var(--text);
   border-radius: 10px;
   padding: 20px;
 }
+
+
+label {
+  color: var(--text);
+}
+
 
 .error {
   color: var(--error);
