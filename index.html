@@ -39,6 +39,18 @@
         </div>
       </section>
 
+      <!-- Formulário -->
+      <section id="contact">
+        <form id="contactForm" novalidate>
+          <label>Nome:<input type="text" id="name" name="name" required /></label>
+          <label>Email:<input type="email" id="email" name="email" required /></label>
+          <label>Mensagem :<input type="text" id="message" name="message" required /></label>
+          <span id="formError" class="error" hidden>Preencha todos os campos.</span>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+
     </main>
 
     <script src="script.js"></script>
