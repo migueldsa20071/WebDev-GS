@@ -22,4 +22,21 @@ themeRadios.forEach(radio => {
 
 
 
+  // SlideShow
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+
+  document.getElementById("prev").addEventListener("click", () => showSlide(currentSlide - 1));
+  document.getElementById("next").addEventListener("click", () => showSlide(currentSlide + 1));
+
+  // Autoplay a cada 5 seg
+  setInterval(() => showSlide(currentSlide + 1), 5000);
+
+ 
 });
