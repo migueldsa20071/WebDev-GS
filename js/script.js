@@ -38,5 +38,19 @@ themeRadios.forEach(radio => {
   // Autoplay a cada 5 seg
   setInterval(() => showSlide(currentSlide + 1), 5000);
 
- 
+  // Validação do Formulário
+  const form = document.getElementById("contactForm");
+  const formError = document.getElementById("formError");
+
+  form.addEventListener("submit", (e) => {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      formError.hidden = false;
+    } else {
+      formError.hidden = true;
+      alert("Mensagem enviada com sucesso!");
+    }
+  });
+
+
 });
