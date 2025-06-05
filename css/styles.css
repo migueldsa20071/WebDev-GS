@@ -118,4 +118,36 @@ body {
   display: block;
 }
 
+.controls button {
+  margin: 0 5px;
+  padding: 0.5rem;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  border: solid black 2px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.error {
+  color: var(--error);
+  font-size: 0.9rem;
+}
+
+#quizContainer .question {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#quizContainer .options button {
+  display: block;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
